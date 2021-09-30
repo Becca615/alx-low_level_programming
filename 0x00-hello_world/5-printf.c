@@ -1,13 +1,12 @@
 #include <stdio.h>
+
 /**
- * main - main function
- * Return: 0 the function returns nothing
-*/
+ * main - Entry point for the program
+ *
+ * Return: It returns 0
+ */
 int main(void)
 {
-	/*
-	 * prints the required text
-	 */
-	printf("with proper grammar, but the outcome is a piece of art,\n");
-	return (0);
+printf("with proper grammar, but the outcome is a piece of art,\n");
+return (0);
 }
