@@ -1,18 +1,20 @@
-#include "holberton.h"
+#include "main.h"
+
 /**
- * main - funtion to print
- * Description: print _putchar
- * Return: Always 0
+ * main - Prints _putchar as a message
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char i[9] = {'H', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n'};
-	unsigned int n;
+  int str[] = {72, 111, 108, 98, 101, 114, 116, 111, 110};
+	int count, sz;
 
-	for (n = 0; n < sizeof(i); n++)
+	sz = sizeof(str) / sizeof(int);
+	for (count = 0; count < sz; count++)
 	{
-		_putchar(i[n]);
+		_putchar(str[count]);
 	}
-_putchar('\n');
-return (0);
+	_putchar('\n');
+	return (0);
 }
