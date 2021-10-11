@@ -1,21 +1,20 @@
 #include "main.h"
 
 /**
- * main - Prints "_putchar" followed by a new line.
- * Description: You are not allowed to include standard libraries.
- * Return: 0
+ * main - Prints _putchar as a message.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char holberton[] = "Holberton";
-	int i = 0;
+  int str[] = {'H', 'o','l', 'b', 'e', 'r', 't', 'o', 'n'};
+  int count, sz;
 
-	while (holberton[i] != '\0')
+	sz = sizeof(str) / sizeof(int);
+	for (count = 0; count < sz; count++)
 	{
-		_putchar(holberton[i]);
-		i++;
+		_putchar(str[count]);
 	}
 	_putchar('\n');
-
 	return (0);
-} 
+}
