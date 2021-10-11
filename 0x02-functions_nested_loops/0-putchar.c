@@ -1,19 +1,20 @@
 #include "main.h"
 
 /**
- * main - function to print
+ * main - Prints _putchar as a message.
  *
- * Return: 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-  char _putchar[7] = {'P', 'u', 't', 'c', 'h', 'a', 'r'};
-  unsigned int c;
-  
-  for (c = 0; c < sizeof(putchar); c++)
+	int str[] = {72, 111, 108, 98, 101, 114, 116, 111, 110};
+	int count, sz;
+
+	sz = sizeof(str) / sizeof(int);
+	for (count = 0; count < sz; count++)
 	{
-	  _putchar(putchar[c]);
-	  }
-_putchar('\n');
-return (0);
+		_putchar(str[count]);
+	}
+	_putchar('\n');
+	return (0);
 }
