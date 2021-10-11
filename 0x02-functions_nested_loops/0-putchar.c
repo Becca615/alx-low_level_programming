@@ -1,20 +1,19 @@
 #include "main.h"
 
 /**
- * main - Prints _putchar as a message.
+ * main - function to print
  *
- * Return: Always 0 (Success)
+ * Return: 0
  */
 int main(void)
 {
-  int str[] = {'H', 'o','l', 'b', 'e', 'r', 't', 'o', 'n'};
-  int count, sz;
+	char holberton[9] = {'H', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n'};
+	unsigned int c;
 
-	sz = sizeof(str) / sizeof(int);
-	for (count = 0; count < sz; count++)
+	for (c = 0; c < sizeof(holberton); c++)
 	{
-		_putchar(str[count]);
+		_putchar(holberton[c]);
 	}
-	_putchar('\n');
-	return (0);
+_putchar('\n');
+return (0);
 }
