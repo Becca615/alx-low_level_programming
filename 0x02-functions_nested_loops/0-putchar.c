@@ -1,18 +1,17 @@
 #include "main.h"
-
 /**
- * main - function to print
- *
- * Return: 0
+ * main - funtion to print
+ * Description: print _putchar
+ * Return: Always 0
  */
 int main(void)
 {
-	char holberton[9] = {'H', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n'};
-	unsigned int c;
+  char i[7] = {'P', 'u', 't', 'c', 'h', 'a', 'r'};
+	unsigned int n;
 
-	for (c = 0; c < sizeof(holberton); c++)
+	for (n = 0; n < sizeof(i); n++)
 	{
-		_putchar(holberton[c]);
+		_putchar(i[n]);
 	}
 _putchar('\n');
 return (0);
